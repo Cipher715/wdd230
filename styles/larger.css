@@ -1,0 +1,28 @@
+@media only screen and (min-width: 820px) {
+
+    nav ul{
+        display: flex;
+        
+    }
+
+    nav ul li{
+        flex: 1 1 100%
+    }
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        margin: 1rem 0;
+    }
+
+    .cards section {
+        box-shadow: 1px 1px 10px black;
+    }
+
+}
