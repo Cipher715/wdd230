@@ -35,6 +35,10 @@ nav {
     background-color: var(--primary-color);
 }
 
+nav ul {
+    list-style: none;
+}
+
 nav a {
     display: block;
     color: white;
@@ -52,9 +56,6 @@ nav .active {
     background-color: rgba(0,0,0,0.3);
 }
 
-nav ul {
-    list-style: none;
-}
 
 main h1 {
     border-bottom: 1px solid black;
