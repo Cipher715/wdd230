@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Merriweather:ital@1&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --heading-font: Merriweather;
+    --paragraph-font: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 16px;
+    --primary-color: #648de5;
+    --secondary-color: #f9f6ea; 
+    --accent1-color: #9eb7e5;
+    --accent2-color: #cdc392;
+}
