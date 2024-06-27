@@ -20,13 +20,11 @@ header {
     background-color: var(--accent1-color);
     color: white;
     padding: 1rem;
-}
-
-header span {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--heading-font);
+    font-size: 2rem;
     gap: 3rem;
 }
 

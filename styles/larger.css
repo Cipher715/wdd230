@@ -13,7 +13,6 @@
         margin: 0 auto;
     }
 
-
     .cards {
         display: grid;
         grid-template-columns: 2fr 1fr;
