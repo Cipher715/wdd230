@@ -25,22 +25,47 @@ header {
     font-family: var(--heading-font);
     font-size: 2rem;
     gap: 3rem;
+    position: relative;
 }
 
 header img {
     box-shadow: 1px 1px 10px black;
 }
 
-nav {
+#darkButton {
+    box-shadow: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: relative;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
     background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	list-style: none;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav a {
-    display: block;
+.navigation  a{
+    display: none;
     color: black;
     text-align: center;
     padding: 0.5rem;
@@ -48,16 +73,30 @@ nav a {
     font-weight: bold;
 }
 
-nav li:hover {
+.navigation a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-nav .active {
+.navigation .active {
     background-color: rgba(0,0,0,0.2);
 }
 
+.open a {
+	display: block;
+}
 
+.dark {
+    background-color: black;
+}
 
+.dark h1 {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.dark #menu {
+    color: white;
+}
 
 main h1 {
     border-bottom: 1px solid black;
@@ -89,6 +128,7 @@ main h1 {
 .cards p, li{
     padding: 0.3rem 10px;
 }
+
 
 footer {
     padding: 1rem;

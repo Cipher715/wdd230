@@ -1,13 +1,19 @@
 @media only screen and (min-width: 820px) {
 
-    nav ul{
-        display: flex;
-        
+    #menu {
+        display: none;
     }
 
-    nav ul li{
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a{
+        display: block;
         flex: 1 1 100%
     }
+
     main {
         max-width: 800px;
         margin: 0 auto;
