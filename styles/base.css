@@ -4,9 +4,9 @@
     --heading-font: Merriweather;
     --paragraph-font: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 16px;
-    --primary-color: #648de5   ;
+    --primary-color: #0bc008;
     --secondary-color: #f9f6ea ; 
-    --accent1-color: #9eb7e5;
+    --accent1-color: #a0f49f;
     --accent2-color: #cdc392;
 }
 
@@ -48,12 +48,16 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
+nav li:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 nav .active {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav .active a {
+    color: white;
 }
 
 
@@ -77,8 +81,8 @@ main h1 {
 }
 
 .cards h2 {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--accent1-color);
+    color: black;
     display: block;
     text-align: center;
     padding: .75rem 0;
