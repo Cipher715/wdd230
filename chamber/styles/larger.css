@@ -1,0 +1,33 @@
+@media only screen and (min-width: 820px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a{
+        display: block;
+        flex: 1 1 100%
+    }
+
+    main {
+       margin: 0 auto;
+    }
+    
+    .cards, .ads {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards {
+        grid-gap: 1rem;
+    }
+
+    .event {
+        grid-column: 1/3;
+    }
+}
