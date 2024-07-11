@@ -17,7 +17,19 @@
     main {
        margin: 0 auto;
     }
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
+        margin: 0 2vw;
+    }
     
+    .pictures img {
+        cursor: pointer;
+    }
+
+
     .cards, .ads {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

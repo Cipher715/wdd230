@@ -17,22 +17,48 @@
 </head>
 <body>
     <header>
-        <img src="images/ttcc.png" alt="website icon" width="100px">
+        <img src="images/ttcc.webp" alt="website icon" width="100">
         <span>Tokyo Tourism Chamber of Commerce</span>
 
     </header>
     <button id="menu"></button>
     <nav class="navigation">
         <a href="index.html" class="active">Home</a>
-        <a href="#">About Us</a>
+        <a href="discover.html">About Us</a>
         <a href="#">Join</a>
         <a href="#">Contact</a>
     </nav>
-    <main>
+    <main class="discover">
+        <div class="sidebar">
+            <div class="welcome">
+                <h1>Welcome!</h1>
+                <p><span class="lastVisit"></span></p>
+            </div>
+            <div>
+                <h1>Learn About Us</h1>
+                <p>Learn what we do, have, and see.<br>
+                If you have any question, feel free to contact us!</p>
+            </div>
+            <div>
+                <h1>Event</h1>
+                <p>We have BBQ on every weekends</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414972.8029804728!2d139.1148193890625!3d35.652987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b730240003b%3A0xd3d073095df76db7!2sTokyo%20Japan%20Temple!5e0!3m2!1sen!2sjp!4v1720655937183!5m2!1sen!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="pictures">
+            <img src="images/city.webp" alt="chity pic" loading="lazy" width="500" height="300">
+            <img src="images/mtfuji.webp" alt="fuji pic" loading="lazy" width="500" height="300">
+            <img src="images/sakura.webp" alt="sakura pic" loading="lazy" width="500" height="300">
+            <img src="images/shrine.webp" alt="shrine pic" loading="lazy" width="500" height="300">
+            <img src="images/temple.webp" alt="temple pic" loading="lazy" width="500" height="300">
+            <img src="images/tokyo-tower.webp" alt="tokyo-tower pic" loading="lazy" width="500" height="300">
+        </div>
         
     </main>
     <footer>
-        <img src="images/ttcc.png" alt="website icon" width="100px">
+        <img src="images/ttcc.webp" alt="website icon" width="100">
         <h2>Tokyo Tourism Chamber of Commerce</h2>
         <a href="mailto:atsushi.karino@gmail.com">atsushi.karino@gmail.com</a>
         <div></div>
@@ -41,5 +67,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/lastVisit.js"></script>
 </body>
 </html>
