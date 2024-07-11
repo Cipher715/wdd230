@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 <body>
     <div id="main">
     <header>
-        <img src="images/profile.jpg" alt="Atsushi Karino Profile Photo" width="75" height="100">
+        <img src="images/profile.webp" alt="Atsushi Karino Profile Photo" width="75" height="100">
         <span>Atsushi Karino</span>
         <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="darkButton">
     </header>
@@ -30,6 +30,15 @@
         <a href="#">Form</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="large image" width="960px" height="480px">
+            </picture>
+            <div class="label">
+                <p>Sapporo Japan Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="cards">
             <section class="card">
@@ -37,7 +46,7 @@
                 <ul>
                     <li>Week 01: <a href="#"></a></li>
                     <li>Week 02: <a href="https://codepen.io/Atsushi-Karino/pen/XWwvwbG">W2 Codepen</a> | <a href="week02/bom.html">W2 BoM list</a> </li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a></li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">LazyLoad</a> | <a href="week03/responsive-images.html">Responsive Image</a> | <a href="week03/bom.html">BoM</a></li>
                     <li>Week 04: <a href="#"></a></li>
                     <li>Week 05: <a href="#"></a></li>
                     <li>Week 06: <a href="#"></a></li>                
@@ -48,9 +57,10 @@
                 <h2>Information</h2>
                 <p>Location</p>
                 <p>Weather</p>
-                <p>Visits</p>
+                <p><span>Visits: </span><span class="visits"></span></p>
             </section>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414972.8029804728!2d139.1148193890625!3d35.652987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b730240003b%3A0xd3d073095df76db7!2sTokyo%20Japan%20Temple!5e0!3m2!1sen!2sjp!4v1720655937183!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
     </main>
@@ -62,5 +72,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>
