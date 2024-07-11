@@ -83,7 +83,7 @@ main {
     margin: 0 2vw;
 }
 
-.sidebar, .pictures, .welcome{
+.sidebar, .pictures{
     display: flex;
     flex-direction: column;
 }
