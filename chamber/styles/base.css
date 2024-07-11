@@ -75,18 +75,22 @@ main {
     margin: 0 3vw;
 }
 
+.welcome {
+    margin: 0 auto;
+}
+
 .discover {
     margin: 0 2vw;
 }
 
-.sidebar, .pictures{
+.sidebar, .pictures, .welcome{
     display: flex;
     flex-direction: column;
 }
 
 .sidebar div:not(.map) {
     background-color: var(--secondary-color);
-    padding-bottom: 1rem;
+    padding: 1rem;
     padding-left: 1rem;
     margin: 1rem 0;
 }
