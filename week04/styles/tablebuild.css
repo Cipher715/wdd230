@@ -1,0 +1,53 @@
+:root {
+	--bord: thin solid darkgray;
+    --zebra: rgb(240, 239, 239);
+}
+
+table {
+    margin: 5rem;
+    border: var(--bord);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: gray;
+    font-size: .85rem;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: var(--bord);
+}
+
+thead tr:last-child{
+    background-color: rgb(41, 41, 41);
+    color: white;
+
+}
+
+thead tr:last-child th{
+    border: var(--bord);
+    border-top: none;
+    border-left: none;
+}
+
+thead tr th:first-child{
+    background-color: black;
+    color: white;
+    border: none;
+}
+  
+th {
+    font-size: larger;
+}
+  
+td {
+    text-align: center;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+  
