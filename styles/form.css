@@ -1,0 +1,97 @@
+:root {
+    --heading-font: Merriweather;
+    --paragraph-font: "Source Sans Pro", Helvetica, sans-serif;
+    --label-font: Great Vibes;
+    font-size: 16px;
+    --primary-color: #0bc008;
+    --secondary-color: #f9f6ea ; 
+    --accent1-color: #a0f49f;
+    --accent2-color: #cdc392;
+    --formtitle: rgb(76, 91, 235);
+    --required-border: solid 8px red;
+    --valid-border: solid 8px green;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+
+.fr1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.fr1 legend {
+    color: var(--formtitle);
+    padding: 0 .5rem;
+}
+
+.fr1 label{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(202, 36, 36);
+    font-size: .9rem;
+}
+
+
+.fr1 input[type="text"],
+.fr1 input[type="password"],
+.fr1 input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+#formmessage {
+	display: none;
+    color: red;
+}
+
+.fr1 input[type="submit"] {
+    border: none;
+    background-color: greenyellow;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    font-weight: bold;
+}
+
+.fr1 #range {
+    width: 100%;
+    max-width: 400px;
+}
+.fr1 #rangevalue {
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.fr1 #rangevalues {
+    display: flex;
+	width: 110%;
+    max-width: 440px;
+}
+
+.fr1 #rangevalues option {
+	flex: 1 1 auto;
+}
+
+.fr1 input:required {
+    border-right: var(--required-border);
+}
+
+.fr1 input:required:valid {
+    border-right: var(--valid-border);
+}

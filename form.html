@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atsushi Karino - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Atsushi Karino, course assignment portal">
+    <meta name="author" content="Atsushi Karino">
+    <meta property="og:title" content="Atsushi Karino - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.metro.tokyo.lg.jp/FLCOMMON/IMG/hdr_logo_en.png">
+    <meta property="og:url" content="https://cipher715.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="main">
+    <header>
+        <img src="images/profile.webp" alt="Atsushi Karino Profile Photo" width="75" height="100">
+        <span>Atsushi Karino</span>
+        <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="darkButton">
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html" class="active">Form</a>
+    </nav>
+    <main>
+        <h1>Users Form</h1>
+        <form method="get" action="record.html" class="fr1">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>Username* <input type="text" name="uname" id="uname" required></label>
+                <label>Password* <input type="password" name="pwd" id="pwd1" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters longand can only be alpha-numeric" required></label>
+                <div id="formmessage">Passwords do not match. Please try again</div>
+                <label>Re-enter Your Password* <input type="password" name="pwd2" id="pwd2" title="Password must match with above" required> </label>
+                <label>Email* <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address with'@byui.edu'" placeholder="Enter an email address with the doain '@byui.edu'"> </label>
+                <label>Page Rating</label>
+                    <div id="rangevalue">1</div>
+                    <input type="range" name="range" id="range" min="1" max="10" value="1" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+            </fieldset>
+            <input type="submit" value="Send My Answer">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Atsushi Karino | Tokyo Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+    </div>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/pwdValidate.js"></script>
+</body>
+</html>

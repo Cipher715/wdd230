@@ -133,6 +133,11 @@ main h1 {
     margin: 1rem 2vw;
 }
 
+#thkmsg {
+    margin: 1rem 2vw;
+}
+
+
 .cards {
     margin: 1rem 2vw;
     display: grid;
