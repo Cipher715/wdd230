@@ -216,7 +216,7 @@ main {
 
 
 .submit{
-    margin: 2rem 2rem;
+    margin: -1rem 2rem 2rem 2rem;
 }
 
 
@@ -236,10 +236,6 @@ main {
 
 .joinf input:required:valid {
     border-right: var(--valid-border);
-}
-
-.joinf .times {
-    margin: -1rem 0 0 4rem;
 }
 
 .benefits {
