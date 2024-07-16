@@ -168,6 +168,7 @@ main {
 }
 
 .joinf fieldset {
+    background-color: #e3f9e3;
     margin: 2rem 4rem;
     border: 1px solid #ddd;
     border-radius: 6px;
