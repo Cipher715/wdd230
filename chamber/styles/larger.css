@@ -58,49 +58,8 @@
 
     .join {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
+        margin: auto 3vw;
     }
         
-    .benefits {
-        display: block;
-        width: 100%;
-        margin: auto;
-        padding: 0 2vw;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        padding: 7px 15px;
-        border: var(--bord);
-    }
-
-    thead tr:last-child{
-        background-color: var(--accent1-color);
-        color: black;
-
-    }
-
-    thead tr:last-child th{
-        border: var(--bord);
-        border-top: none;
-        border-left: none;
-    }
-
-    thead tr th:first-child{
-        background-color: var(--primary-color);
-        color: black;
-        border: none;
-    }
-    
-    th p {
-        font-size: small;
-    }
-    
-    td {
-        text-align: center;
-    }
-    
-    tbody tr:nth-child(even) {
-        background-color: var(--zebra);
-    }
 }

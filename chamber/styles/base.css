@@ -9,6 +9,8 @@
     --accent1-color: #a0f49f;
     --accent2-color: #cdc392;
     --formtitle: rgb(76, 91, 235);
+    --bord: thin solid darkgray;
+    --zebra: rgb(240, 239, 239);
     --required-border: solid 8px red;
     --valid-border: solid 8px green;
 }
@@ -169,7 +171,7 @@ main {
 
 .joinf fieldset {
     background-color: #e3f9e3;
-    margin: 2rem 4rem;
+    margin: 2rem 2rem;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
@@ -214,8 +216,7 @@ main {
 
 
 .submit{
-    margin: 2rem 4rem;
-    padding: .5rem 2%;
+    margin: 2rem 2rem;
 }
 
 
@@ -242,7 +243,45 @@ main {
 }
 
 .benefits {
-    display: none;
+    width: 100%;
+    margin: auto;
+    padding: 0 2vw;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: var(--bord);
+}
+
+thead tr:last-child{
+    background-color: var(--accent1-color);
+    color: black;
+
+}
+
+thead tr:last-child th{
+    border: var(--bord);
+    border-top: none;
+    border-left: none;
+}
+
+thead tr th:first-child{
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+}
+
+th p {
+    font-size: small;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
 }
 
 .thkmain {
