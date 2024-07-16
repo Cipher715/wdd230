@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 @media only screen and (min-width: 820px) {
+
+    :root {
+        --heading-font: Oswald;
+        --paragraph-font: "Source Sans 3", Helvetica, sans-serif;
+        font-size: 16px;
+        --primary-color: #0bc008;
+        --secondary-color: #f9f6ea ; 
+        --accent1-color: #a0f49f;
+        --accent2-color: #cdc392;
+        --bord: thin solid darkgray;
+        --zebra: rgb(240, 239, 239);
+    }
 
     #menu {
         display: none;
@@ -20,7 +34,7 @@
 
     .discover {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
         grid-gap: 1rem;
         margin: 0 2vw;
     }
@@ -40,5 +54,53 @@
 
     .event {
         grid-column: 1/3;
+    }
+
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    .benefits {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: 0 2vw;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 7px 15px;
+        border: var(--bord);
+    }
+
+    thead tr:last-child{
+        background-color: var(--accent1-color);
+        color: black;
+
+    }
+
+    thead tr:last-child th{
+        border: var(--bord);
+        border-top: none;
+        border-left: none;
+    }
+
+    thead tr th:first-child{
+        background-color: var(--primary-color);
+        color: black;
+        border: none;
+    }
+    
+    th p {
+        font-size: small;
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: var(--zebra);
     }
 }

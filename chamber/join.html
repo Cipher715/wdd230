@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Tourism Chamber of Commerce Join Us Page</title>
+    <meta name="description" content="Tokyo Tourism Chamber of Commerce Join Us Page">
+    <meta name="author" content="Atsushi Karino">
+    <meta property="og:title" content="Tokyo Tourism Chamber of Commerce Join Us Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.metro.tokyo.lg.jp/FLCOMMON/IMG/hdr_logo_en.png">
+    <meta property="og:url" content="https://cipher715.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="greent.ico">
+</head>
+<body>
+    <header>
+        <img src="images/ttcc.webp" alt="website icon" width="100">
+        <span>Tokyo Tourism Chamber of Commerce</span>
+
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">About Us</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main class="join">
+        <form action="thankyou.html" method="get" class="joinf">
+            <h1>Join us</h1>
+            <fieldset>
+                <legend>Application Information  </legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required> </label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required> </label>
+                <label>Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z/s-]{7,}"> </label>
+                <label>Email*  <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label>Mobile Phone Number*  <input type="tel" name="tel" id="tel" required></label>
+                <label>Business/Organization Name* <input type="text" name="orgname" id="orgname" required> </label>
+                <label>Membership Level*  </label>
+                    <label><input type="radio" name="level" value="np" required>NP</label>
+                    <label><input type="radio" name="level" value="bronze" required>Bronze</label>
+                    <label><input type="radio" name="level" value="silver" required>Silver</label>
+                    <label><input type="radio" name="level" value="gold" required>Gold</label>
+                <label>Your Business/Organization's Description </label>
+                    <textarea name="orgdesc" id="orgdesc" cols="30" rows="10"></textarea>
+            </fieldset>
+            <div class="times">You have started at: <span id="timestamp"></span></div> 
+            <div class="submit"><input type="submit" value="Join the Commerce"></div>
+        </form>
+        <table class="benefits">
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">
+                        Membership Level
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">NP<br><p>(Non-Profit)</p></th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold<br><p>(Name will be displayed on special corporation page)</p></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Invited to Events</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Special Training</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ads on Homepage, <br>Discount on Events</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="images/ttcc.webp" alt="website icon" width="100">
+        <h2>Tokyo Tourism Chamber of Commerce</h2>
+        <a href="mailto:atsushi.karino@gmail.com">atsushi.karino@gmail.com</a>
+        <div></div>
+        <p>&copy; <span id="year"></span> | Atsushi Karino | WDD 230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

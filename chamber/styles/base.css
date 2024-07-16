@@ -8,6 +8,9 @@
     --secondary-color: #f9f6ea ; 
     --accent1-color: #a0f49f;
     --accent2-color: #cdc392;
+    --formtitle: rgb(76, 91, 235);
+    --required-border: solid 8px red;
+    --valid-border: solid 8px green;
 }
 
 *{
@@ -163,6 +166,92 @@ main {
 .cards p{
     padding: 0.3rem 10px;
 }
+
+.joinf fieldset {
+    margin: 2rem 4rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.joinf h1 {
+    margin-left: 4rem;
+}
+
+.joinf legend {
+    color: var(--formtitle);
+    padding: 0 .5rem;
+}
+
+.joinf label{
+    display: block;
+    padding-top: 1rem;
+    color: rgb(202, 36, 36);
+    font-size: .9rem;
+}
+
+
+.joinf input[type="text"],
+.joinf input[type="password"],
+.joinf input[type="tel"],
+.joinf input[type="email"],
+.joinf textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.joinf input[type="radio"] {
+    margin-right: 6px;
+}
+
+
+.submit{
+    margin: 2rem 4rem;
+    padding: .5rem 2%;
+}
+
+
+.joinf input[type="submit"] {
+    border: none;
+    background-color: greenyellow;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
+}
+
+.joinf input:required {
+    border-right: var(--required-border);
+}
+
+.joinf input:required:valid {
+    border-right: var(--valid-border);
+}
+
+.joinf .times {
+    margin: -1rem 0 0 4rem;
+}
+
+.benefits {
+    display: none;
+}
+
+.thkmain {
+    margin: 2rem;
+}
+
+.thkmsg {
+    margin: 1rem 2vw;
+}
+
 
 footer {
     display: block;
