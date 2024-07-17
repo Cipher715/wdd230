@@ -169,6 +169,9 @@ main h1 {
     align-items: center;
 }
 
+#learnings a {
+    color: blue;
+}
 
 footer {
     padding: 1rem;
