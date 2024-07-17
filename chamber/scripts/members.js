@@ -18,7 +18,7 @@ function displayMembers(data) {
 
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Picture of ${member.name}`);
-        name.setAttribute('id', name);
+        name.setAttribute('class', "name");
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phone;
