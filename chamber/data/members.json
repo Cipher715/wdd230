@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Sojitz",
+            "address": "2-2-1 Chiyoda Tokyo",
+            "phone": "09876485937",
+            "url": "https://www.sojitz-tourist.com/",
+            "image": "https://www.sojitz-tourist.com/application/themes/sojitz_tourist/common/img/header/logo_new.png",
+            "level": "Gold",
+            "info": "tourism"
+        },
+        {
+            "name": "Shiki",
+            "address": "3-1-1 Chiyoda Tokyo",
+            "phone": "09855577343",
+            "url": "https://www.shikiclub.co.jp/ski/",
+            "image": "https://www.shikiclub.co.jp/ski/wp/wp-content/themes/shikitabi-ski2022/images/common/logo.png",
+            "level": "Gold",
+            "info": "leisure"
+        },
+        {
+            "name": "T-saizon",
+            "address": "2-20-4 Kanda Misaki Tokyo",
+            "phone": "09832479983",
+            "url": "https://www.t-saison.jp/",
+            "image": "https://www.t-saison.jp/new_wp/wp-content/uploads/n_logo.png",
+            "level": "Bronze",
+            "info": "sport"
+        },
+        {
+            "name": "N-Office",
+            "address": "4-15-13 Idabashi Tokyo",
+            "phone": "09852112349",
+            "url": "https://www.n-office.co.jp/",
+            "image": "https://okinawa-nature.com/cms/wp-content/uploads/2020/01/logo-big.png",
+            "level": "NP",
+            "info": "tourism"
+        },
+        {
+            "name": "Ati",
+            "address": "3-3-1 Marunouchi Tokyo",
+            "phone": "09837998725",
+            "url": "http://ati.co.jp/",
+            "image": "http://ati.co.jp/wp-content/uploads/2017/05/cropped-ATI.logo_-1.jpg",
+            "level": "NP",
+            "info": "tourism"
+        },
+        {
+            "name": "Iris",
+            "address": "1-2-2 Kanda Tokyo",
+            "phone": "09865554156",
+            "url": "https://www.iris-global.jp/",
+            "image": "https://static.wixstatic.com/media/250138_74c4ede0dc854ea282a1bbec4244a896~mv2.png/v1/fill/w_240,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo.png",
+            "level": "Gold",
+            "info": "food"
+        },
+        {
+            "name": "Chameleon",
+            "address": "3-12 Chiyoda Tokyo",
+            "phone": "09862658264",
+            "url": "https://chameleonco.jp/",
+            "image": "https://chameleonco.jp/wp-content/uploads/2021/09/logoen.png",
+            "level": "Gold",
+            "info": "tourism"
+        }
+    ]
+}
