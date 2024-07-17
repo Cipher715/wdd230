@@ -1,0 +1,93 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links":[
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links":[
+                {
+                    "url": "https://codepen.io/Atsushi-Karino/pen/XWwvwbG",
+                    "title": "W2 Codepen"
+                },
+                {
+                    "url": "week2/bom.html",
+                    "title":"BoM List"
+                }
+            ]
+
+        },
+        {
+            "week": "Week 3",
+            "links":[
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title":"LazyLoad"
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title":"Responsive Image"
+                },
+                {
+                    "ur":"week03/bom.html",
+                    "title":"BoM"
+                }
+            ]
+
+        },
+        {
+            "week": "Week 4",
+            "links":[
+                {
+                    "url": "https://codepen.io/Atsushi-Karino/pen/WNqQNwE",
+                    "title": "Pseudo Codepen"
+                },
+                {
+                    "url": "week04/images/combination.png",
+                    "title":"Combination Screenshot"
+                },
+                {
+                    "url":"week04/tablebuild.html",
+                    "title":"TableDesign"
+                }
+            ]
+
+        },
+        {
+            "week": "Week 5",
+            "links":[
+                {
+                    "url": "https://codepen.io/Atsushi-Karino/pen/vYqLNeE",
+                    "title": "Pseudo Codepen"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title":"Weather"
+                }
+            ]
+        }
+        
+    ]
+}

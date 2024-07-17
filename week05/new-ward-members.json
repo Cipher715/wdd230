@@ -1,0 +1,23 @@
+ {
+    "familyName" : "Karino",
+    "moved" : "2024-07-17",
+    "number" : 7,
+    "visited" : true,
+    "members" : [
+        {
+            "name" : "Atsushi",
+            "gender" : "male",
+            "birthdate" : "1999-07-15"
+        },
+        {
+            "name" : "Shiho",
+            "gender" : "female",
+            "birthdate" : "1998-09-20"
+        },
+        {
+            "name" : "Aki",
+            "gender" : "male",
+            "birthdate" : "2023-09-02"
+        }
+    ]
+}
