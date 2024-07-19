@@ -11,7 +11,7 @@ function displayMembers(data) {
     data.forEach(member =>  {
         let section = document.createElement('section');
         let img = document.createElement('img');
-        let name = document.createElement('p');
+        let name = document.createElement('h3');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let a = document.createElement('a');
@@ -19,12 +19,14 @@ function displayMembers(data) {
         img.setAttribute('src', member.image);
         img.setAttribute('alt', `Picture of ${member.name}`);
         name.setAttribute('class', "name");
+        address.setAttribute('class', "address");
+        phone.setAttribute('class', "phone");
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phone;
         a.setAttribute('href', member.url);
         a.setAttribute('alt', `${member.name} site url`);
-        a.textContent = member.url;
+        a.textContent = "Visit website";
 
         section.appendChild(img);
         section.appendChild(name);

@@ -13,6 +13,7 @@
     --zebra: rgb(240, 239, 239);
     --required-border: solid 8px red;
     --valid-border: solid 8px green;
+    --zebra-color: #c7f5c6;
 }
 
 *{
@@ -288,10 +289,12 @@ tbody tr:nth-child(even) {
     margin: 1rem 2vw;
 }
 
+.directorytitle {
+    text-align: center;
+}
+
 .displaymenu {
-	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: var(--accent1-color);
 	text-align: center;
 }
 
@@ -304,7 +307,7 @@ tbody tr:nth-child(even) {
 }
 
 .displaymenu img {
-    width: 90%;
+    width: 100%;
 }
 
 .grid {
@@ -321,7 +324,7 @@ tbody tr:nth-child(even) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px gray;
     border: solid thin black;
 }
 
@@ -339,6 +342,38 @@ tbody tr:nth-child(even) {
 .grid p {
     padding: .3rem;
 }
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+.list section {
+	display: flex;
+    flex-direction: column;
+	padding: .5rem;
+    align-items: center;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+	background-color: var(--zebra-color);
+}
+
 
 footer {
     display: block;

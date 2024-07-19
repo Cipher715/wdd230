@@ -61,5 +61,28 @@
         grid-template-columns: 1fr 1.5fr;
         margin: auto 3vw;
     }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        margin: 0;
+        padding: .5rem;
+    }
+
+    section .address {
+        grid-column: 2/3;
+    }
+
+    section .phone {
+        grid-column: 3/4;
+    }
+
+    section .name, section a{
+        grid-row: 1/2;
+    }
+    
+    section a {
+        grid-column: 4/5;
+    }
         
 }
