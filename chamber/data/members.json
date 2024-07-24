@@ -51,7 +51,7 @@
             "phone": "09865554156",
             "url": "https://www.iris-global.jp/",
             "image": "https://static.wixstatic.com/media/250138_74c4ede0dc854ea282a1bbec4244a896~mv2.png/v1/fill/w_240,h_114,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo.png",
-            "level": "Gold",
+            "level": "Silver",
             "info": "food"
         },
         {
@@ -60,7 +60,7 @@
             "phone": "09862658264",
             "url": "https://chameleonco.jp/",
             "image": "https://chameleonco.jp/wp-content/uploads/2021/09/logoen.png",
-            "level": "Gold",
+            "level": "NP",
             "info": "tourism"
         }
     ]

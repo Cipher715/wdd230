@@ -128,16 +128,18 @@ main {
     z-index: -1;
 }
 
+
 .joinBtn {
     grid-area: 3/2/4/3;
     width: 60%;
     height: 40px;
-    border-radius: 10px;
     margin: auto;
+    border-radius: 10px;
     background-color: rgb(18, 100, 96);
     color: white;
     border: none;
     box-shadow: 1px 1px 10px white;
+    cursor: pointer;
 }
 
 .cards, .ads{
@@ -166,7 +168,7 @@ main {
     background-color: unset;
 }
 
-.cards p{
+.cards p, .cards h3{
     padding: 0.3rem 10px;
 }
 
@@ -386,3 +388,54 @@ footer div {
     margin: 1vw;
     border-bottom: solid 1px black;
 }
+
+.weather div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather h3 {
+    margin-top: 1vw;
+}
+
+#forecast {
+    flex-direction: row;
+}
+
+#forecast div{
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#ads {
+    margin: 2rem 2vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+}
+
+#ads section {
+    background-color: var(--secondary-color);
+    padding: .25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px gray;
+    border: solid thin black;
+}
+
+#ads img {
+    height: 75px;
+    width: auto;
+    max-width: 90%;
+    margin: 1rem;
+}
+
+#ads p {
+    padding: .3rem;
+}
+
